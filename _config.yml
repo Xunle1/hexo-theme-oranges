@@ -21,13 +21,13 @@
 # 网站图标
 favicon:
   enable: true
-  icon: /images/favicon.png
-  touch_icon: /images/favicon.png
+  icon: /images/avatar.jpg
+  touch_icon: /images/avatar.jpg
 
 # 用户头像与昵称
 avatar:
-  author_photo: /images/avatar.png
-  author_nickname: Oranges
+  author_photo: /images/avatar.jpg
+  author_nickname: 荀乐
   path: /
 
 # Google 分析
@@ -40,7 +40,7 @@ gtag:
 
 # 文章评论系统
 comments:
-  enable: true
+  enable: false
   # 目前仅支持gitalk, valine, disqus评论，选择喜欢的一种开启即可
 
   gitalk:
@@ -101,7 +101,7 @@ navbar:
     key: tags
   -
     name: Friends
-    enable: true
+    enable: false
     path: /friends/
     key: friends
   -
@@ -146,10 +146,10 @@ footer:
       name: github
       icon: github
       path: https://github.com/zchengsite/hexo-theme-oranges
-    # -
-    #   name: email
-    #   icon: envelope
-    #   path: 
+    -
+      name: email
+      icon: envelope
+      path: xunle1121@gmail.com
     # -
     #   name: facebook
     #   icon: facebooksquare
@@ -166,20 +166,20 @@ footer:
     #   name: weibo
     #   icon: weibo
     #   path:
-    # -
-    #   # rss需安装 hexo-generator-feed 插件
-    #   # 具体参照https://github.com/hexojs/hexo-generator-feed
-    #   name: rss
-    #   icon: rss
-    #   path: /atom.xml
+    -
+      # rss需安装 hexo-generator-feed 插件
+      # 具体参照https://github.com/hexojs/hexo-generator-feed
+      name: rss
+      icon: rss
+      path: /atom.xml
 
   more:
     # 支持变量显示，可自定义扩展，具体见主题/layout/_partial/footer.ejs
     # 一般用来显示根据各种场景需要切换的文本，如时间年份
     # 如：{thisYear} 会被替换为今年年份
     -
-      name: Copyright © {thisYear} Oranges
-      path: https://github.com/zchengsite/hexo-theme-oranges
+      name: © 2021 - {thisYear} 荀乐
+      path: https://github.xunle.io
     -
       name: Theme by Oranges | Powered by Hexo
       path: https://github.com/zchengsite/hexo-theme-oranges
@@ -217,7 +217,7 @@ colorSwitch:
 
 # 文章分享
 postShare:
-  enable: true
+  enable: false
 
   twitter:
     enable: true
@@ -229,7 +229,7 @@ postShare:
 codeBlock:
   # 代码块风格，默认normal
   # 可选：默认风格'normal'；mac黑色风格：'mac-black'
-  style: 'normal'
+  style: 'mac-black'
   # 代码复制
   copy:
     enable: true
