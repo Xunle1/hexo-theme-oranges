@@ -76,7 +76,7 @@
                 <% for(let item of page.tags.data) { %>
                 <span class="span--tag mr-8">
                   <a href="<%= url_for(item.path)%>" title="<%- item.name %>">
-                    #<%- item.name %>
+                    <b>#</b><%- item.name %>
                   </a>
                 </span>
                 <% } %>
@@ -84,13 +84,13 @@
           <% }
           }
           if (item.key === 'categories' && item.enable) {
-            if(page.tags && page.categories.length > 0) { %>
+            if(page.categories && page.categories.length > 0) { %>
               <span class="post-categories">
                 <i class="iconfont icon-bookmark" title="<%= __('categories') %>"></i>
                 <% for(let item of page.categories.data){ %>
                 <span class="span--category">
                   <a href="<%= url_for(item.path)%>" title="<%- item.name %>">
-                    <b>#</b> <%- item.name %>
+                    <b>#</b><%- item.name %>
                   </a>
                 </span>
                 <% } %>
